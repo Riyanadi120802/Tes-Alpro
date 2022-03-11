@@ -1,7 +1,13 @@
 #include <iostream>
-using namespace std;
+#include "input.h"
+// #include "proses.h"
+// #include "output.h"
+
 
 int main(){
-	
-	return 0
+	DataParkir input;
+	// iDataParkir();
+	input.to_file();
+
+	return 0;
 }
