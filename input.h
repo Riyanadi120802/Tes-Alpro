@@ -8,15 +8,15 @@ class DataParkir {
 		void to_file(){
 			ofstream tulis;
 
-			tulis.open("data/nama.txt");
+			tulis.open("data/nama.txt", ios::app);
 			tulis << this->nama << endl;
 			tulis.close();
 
-			tulis.open("data/kota.txt");
+			tulis.open("data/kota.txt", ios::app);
 			tulis << this->kota << endl;
 			tulis.close();
 
-			tulis.open("data/nama_kota.txt");
+			tulis.open("data/nama_kota.txt", ios::app);
 			if (this->kota == "AD")
 				tulis << "Solo\n";
 			else if (this->kota == "F")
@@ -25,15 +25,15 @@ class DataParkir {
 				tulis << "Jogja\n";
 			tulis.close();
 
-			tulis.open("data/noplat.txt");
+			tulis.open("data/noplat.txt", ios::app);
 			tulis << this->noplat << endl;
 			tulis.close();
 
-			tulis.open("data/ekstensi.txt");
+			tulis.open("data/ekstensi.txt", ios::app);
 			tulis << this->ekstensi << endl;
 			tulis.close();
 
-			tulis.open("data/jenisKendaraan.txt");
+			tulis.open("data/jenisKendaraan.txt", ios::app);
 			if (this->jenisKendaraan == 1)
 				tulis << "Mobil\n";
 			else if (this->jenisKendaraan == 2)
@@ -41,7 +41,7 @@ class DataParkir {
 			tulis.close();
 
 
-			tulis.open("data/waktu.txt");
+			tulis.open("data/waktu.txt", ios::app);
 			if (this->waktu - (int(this->waktu)) == 0)
 				tulis << this->waktu << endl;
 			else
