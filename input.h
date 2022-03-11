@@ -4,6 +4,8 @@ using namespace std;
 class DataParkir {
 	public :
 		DataParkir();
+		void Sortdata();
+		int toInteger(string x);
 
 		void to_file(){
 			ofstream tulis;
