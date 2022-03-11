@@ -47,11 +47,11 @@ class DataParkir {
 			else
 				tulis << int(this->waktu) + 1 << endl;
 			tulis.close();
-
-
-
-
 		}
+		
+		void ambilData();
+		void cetak();
+	
 	private :
 		string nama, kota, noplat, nama_kota;
 		string ekstensi;
