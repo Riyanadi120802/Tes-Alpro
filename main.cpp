@@ -1,7 +1,7 @@
 #include <iostream>
 #include "input.h"
 #include "proses.h"
-// #include "output.h"
+#include "output.h"
 
 
 int main(){
